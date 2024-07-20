@@ -1,17 +1,17 @@
 import Image, { StaticImageData } from "next/image";
 
-import imageFaille from "../public/images/movies/LA FAILLE.png";
-import imageIdentity from "../public/images/movies/IDENTITY.png";
-import imageLegend from "../public/images/movies/LEGENDES D'AUTOMNE.jpg";
+import imageFaille from "C:/Users/aaaaa/Documents/GitHub/next-personal/public/images/movies/LA FAILLE.png";
+import imageIdentity from "C:/Users/aaaaa/Documents/GitHub/next-personal/public/images/movies/IDENTITY.png";
+import imageLegend from "C:/Users/aaaaa/Documents/GitHub/next-personal/public/images/movies/LEGENDES D'AUTOMNE.jpg";
 
 export async function getStaticProps() {
   return {
     props: {
       pageId: "movies",
       metadata: {
-        title: "El Hadji Bassirou TOURE",
+        title: "Maman Nafy Ndiaye",
         description:
-          "Get to know El Hadji Bassirou TOURE and the things he loves by visiting his personal website.",
+          "Get to know Maman Nafy Ndiaye and the things he loves by visiting his personal website.",
         openGraph: {
           image: "https://example.com/image.jpg",
           url: "https://example.com",
@@ -82,6 +82,12 @@ gap-y-16 mt-8"
             urlDisplay={"CANAL+"}
             imageSrc={imageFaille}
           />
+          <ProjectItem
+            name={"Murder"}
+            url={"https://www.netflix.com/sn/title/80024057"}
+            urlDisplay={"CANAL+"}
+            imageSrc={imageFaille}
+          />
         </ul>
       </div>
       <div className="mt-16">
@@ -91,22 +97,10 @@ gap-y-16 mt-8"
 gap-y-16 mt-8"
         >
           <ProjectItem
-            name={"LEGENDS OF THE FALL"}
-            url={"https://www.netflix.com/sn/title/693960"}
+            name={"Blacklist"}
+            url={"https://www.netflix.com/sn/title/70281312"}
             urlDisplay={"Netflix"}
             imageSrc={imageLegend}
-          />
-          <ProjectItem
-            name={"IDENTITY"}
-            url={"https://www.imdb.com/title/tt0309698/"}
-            urlDisplay={"imdb.com"}
-            imageSrc={imageIdentity}
-          />
-          <ProjectItem
-            name={"LA FAILLE"}
-            url={"https://www.canalplus.com/cinema/la-faille/h/573097_50002"}
-            urlDisplay={"CANAL+"}
-            imageSrc={imageFaille}
           />
         </ul>
       </div>
